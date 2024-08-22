@@ -1,0 +1,141 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-size: 12px;
+}
+
+.viewport {
+  background: #ccc;
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+blockquote {
+  font-size: 16px;
+  width: 47%;
+  z-index: 10;
+}
+
+.halfsafe {
+  position: absolute;
+  top: 0.5%;
+  left: 0.5%;
+  width: 99%;
+  height: 99%;
+  border: 1px solid #999;
+  text-align: right;
+}
+
+.onesafe {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  width: 98%;
+  height: 98%;
+  border: 1px solid #000;
+  text-align: right;
+}
+
+.onehalfsafe {
+  position: absolute;
+  top: 1.5%;
+  left: 1.5%;
+  width: 97%;
+  height: 97%;
+  border: 1px solid #999;
+  text-align: right;
+}
+
+.twosafe {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  width: 96%;
+  height: 96%;
+  border: 1px solid #000;
+  text-align: right;
+}
+
+.twohalfsafe {
+  position: absolute;
+  top: 2.5%;
+  left: 2.5%;
+  width: 95%;
+  height: 95%;
+  border: 1px solid #999;
+  text-align: right;
+}
+
+.threesafe {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  width: 94%;
+  height: 94%;
+  border: 1px solid #000;
+  text-align: right;
+}
+
+.foursafe {
+  position: absolute;
+  top: 4%;
+  left: 4%;
+  width: 92%;
+  height: 92%;
+  border: 1px solid #000;
+  text-align: right;
+}
+
+.fourhalfsafe {
+  position: absolute;
+  top: 4.5%;
+  left: 4.5%;
+  width: 91%;
+  height: 91%;
+  border: 1px solid #999;
+  text-align: right;
+}
+
+.more {
+  display: none;
+}
+
+.morelink {
+  z-index: 10;
+  position: absolute;
+  bottom: 10%;
+  font-size: 18px;
+}
+
+.actionsafe {
+  position: absolute;
+  top: 3.5%;
+  left: 3.5%;
+  width: 93%;
+  height: 93%;
+  border: 1px solid #f00;
+  color: red;
+  font-size: 16px;
+}
+
+.titlesafe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  border: 1px solid #0f0;
+  color: green;
+  font-size: 16px;
+}

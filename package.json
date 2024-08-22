@@ -1,0 +1,11 @@
+{
+  "name": "titlesafe",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "browser-sync start --server --no-open --no-notify --files '**/*.html,**/*.css,**/*.js,**/*.json'"
+  },
+  "devDependencies": {
+    "browser-sync": "~3.0.2"
+  }
+}

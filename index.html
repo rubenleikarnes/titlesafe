@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Titlesafe</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="viewport">
+
+  <blockquote cite="https://pub.smpte.org/pub/st2046-1/st2046-1-2009.pdf">
+	<p>"The Safe Action Area for 1920 x 1080 formats shall be 93% of the width and 93% of the height of the Production Aperture (1786 x 1004). The Safe Title Area for 1920 x 1080 formats shall be 90% of the width and 90% of the height of the Production Aperture (1728 x 972)"</p>
+	<footer>—<a href="https://pub.smpte.org/pub/st2046-1/st2046-1-2009.pdf">SMPTE ST 2046-1:2009, <cite>Specifications for Safe Action and Safe Title Areas for Television</cite></a></footer>
+  </blockquote>
+
+  <a class="morelink" href="/?more">more?</a>
+
+  <div class="halfsafe more"></div>
+	<div class="onesafe more">1%</div>
+	<div class="onehalfsafe more"></div>
+	<div class="twosafe more">2%</div>
+	<div class="twohalfsafe more"></div>
+	<div class="threesafe more">3%</div>
+	<div class="threehalfsafe more"></div>
+	<div class="foursafe more">4%</div>
+	<div class="fourhalfsafe more"></div>
+
+	<div class="actionsafe">
+		Action safe 93% width/height (3.5%)
+	</div>
+	<div class="titlesafe">
+		Title safe 90% width/height (5%)
+	</div>
+</div>
+
+
+<script>
+const params = new URLSearchParams(window.location.search)
+let moreMode = params.get("more") != null
+let moreElm = document.querySelectorAll(".more")
+
+if (moreMode) {
+  moreElm.forEach((element) => {
+    element.style.display = "block"
+  })
+}
+
+</script>
+</body>
+</html>
